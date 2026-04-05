@@ -14,6 +14,7 @@ const syllabusData = [
   {
     index: "02",
     title: "Core Git Workflow",
+    link : "core-git-workflow",
     description: "The bread and butter of your daily engineering lifecycle. Confident tracking and undoing.",
     tags: ["Tracking", "Versioning"],
     commands: ["git add .", "git commit -m 'feat: init'", "git status"],

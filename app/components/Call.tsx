@@ -40,7 +40,7 @@ export default function Call() {
                     </h2>
                     
                     <p className="mb-8 sm:mb-10 text-base sm:text-lg text-slate-300 max-w-2xl mx-auto">
-                        Join hundreds of foundation students in the ultimate blue-themed Git playground. Empower your engineering journey today.
+                        Join hundreds of foundation students in the ultimate Git playground. Empower your engineering journey today.
                     </p>
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -53,11 +53,12 @@ export default function Call() {
                             Enter Playground
                         </motion.button>
                         
-                        <motion.button 
+                        <motion.button
+                        onClick={() => router.push('/syllabus')} 
                             whileHover={{ backgroundColor: "rgba(255,255,255,0.05)" }}
                             className="w-full sm:w-auto rounded-xl border border-white/10 px-8 sm:px-12 py-4 sm:py-5 text-lg font-bold text-white transition-colors"
                         >
-                            Contact Mentors
+                           Checkout Syllabus
                         </motion.button>
                     </div>
                 </motion.div>

@@ -3,6 +3,7 @@
 import { motion, Variants } from "framer-motion";
 import { Sidebar } from "./components/Sidebar";
 import { TerminalBox } from "./components/TerminalBox";
+import Link from "next/link";
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -220,14 +221,16 @@ export default function GitFundamentalsPage() {
                   <span className="material-symbols-outlined text-4xl">check_circle</span>
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold">Module 1.1 Complete</h4>
+                  <h4 className="text-xl font-bold">Module 1 Complete</h4>
                   <p className="text-on-surface-variant">Ready to dive into your first repository?</p>
                 </div>
               </div>
+              <Link href={'/syllabus/core-git-workflow'}>
               <button className="bg-linear-to-r from-primary to-primary-container text-on-primary-fixed px-10 py-4 font-bold rounded-lg hover:shadow-[0_0_20px_rgba(0,163,255,0.4)] active:scale-95 transition-all flex items-center gap-2 group">
                 NEXT LESSON: CORE GIT WORKFLOW
                 <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
               </button>
+              </Link>
             </motion.div>
 
             {/* Footer */}

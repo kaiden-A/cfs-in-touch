@@ -39,8 +39,8 @@ export default function ProgramOverview() {
         },
         {
             icon: "school",
-            title: "Peer Mentorship",
-            desc: "Learn directly from seniors who have successfully navigated the CFS path and are now industry-ready."
+            title: "DevTalk",
+            desc: "Learn directly from seniors who have successfully navigated the CFS path."
         }
     ];
 

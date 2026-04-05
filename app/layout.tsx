@@ -62,6 +62,8 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
+import LayoutUI from "./components/LayoutUI";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -80,16 +82,10 @@ export default function RootLayout({
       <body
         className={`${spaceGrotesk.variable} flex min-h-screen flex-col bg-background-dark font-display text-slate-100 antialiased overflow-x-hidden selection:bg-primary/30 selection:text-primary`}
       >
-        {/* 2. Added Header at the top */}
-        <Header />
-
-        {/* 3. Main content area: 'flex-grow' ensures the footer stays at the bottom on short pages */}
-        <main className="grow">
+        {/* Pass children through the wrapper that handles the logic */}
+        <LayoutUI>
           {children}
-        </main>
-
-        {/* 4. Added Footer at the bottom */}
-        <Footer />
+        </LayoutUI>
       </body>
     </html>
   );
