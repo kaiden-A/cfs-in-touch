@@ -32,7 +32,7 @@ export default function GitFundamentalsPage() {
       {/* Main Content Area */}
       <main className="flex-1 flex flex-col h-full overflow-hidden">
         {/* Fixed Header Spacer (Accounts for your 64px header) */}
-        <div className="h-16 w-full flex-shrink-0 border-b border-outline-variant/10 bg-zinc-950/80 backdrop-blur-xl" />
+        <div className="h-16 w-full shrink-0 border-b border-outline-variant/10 bg-zinc-950/80 backdrop-blur-xl" />
 
         {/* Scrollable Module Content */}
         <div className="flex-1 overflow-y-auto custom-scrollbar pt-12 pb-20 px-8 lg:px-16">
@@ -52,7 +52,7 @@ export default function GitFundamentalsPage() {
                 <div className="h-px flex-1 bg-outline-variant/20"></div>
               </div>
               <h1 className="text-5xl lg:text-7xl font-headline font-bold text-on-surface tracking-tighter mb-8 max-w-3xl leading-tight">
-                What is <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Git?</span>
+                  What is <span className="text-transparent bg-clip-text bg-linear-to-r from-primary to-secondary">Git?</span>
               </h1>
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
                 <div className="lg:col-span-7 space-y-6">
@@ -72,7 +72,7 @@ export default function GitFundamentalsPage() {
                       className="object-cover w-full h-full opacity-60 group-hover:scale-105 transition-transform duration-700" 
                       src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqlXz7eGdUM-X7gZ97aatnU9-mfzn72cb9bDJpVGBAz7YSYC1-oRwqoNiDCuI4hJNOugywB5fVXbOEE-mlIHCFVBtHD5mx3dUWwI7U7uYk_w6l11d6932ufdQhqgdrz8EwND2woD7S1Ck3U4SxKNwp9VhalMk7xhmbmL4cGicmZD2tMtLXYgy56BX2Tt3_bog-eY3mcOc5ksnqE4yngS7pBhayfcnYOd8Djk1Z9SuAoy5b6I0UDPSnN7uUxTG2MTH7cZZS7E6rxAw"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-surface-dim to-transparent"></div>
+                    <div className="absolute inset-0 bg-linear-to-t from-surface-dim to-transparent"></div>
                     <div className="absolute bottom-6 left-6 right-6">
                       <p className="text-xs font-mono text-primary mb-1">LOCAL_HOST.SYSTEM</p>
                       <h3 className="font-headline font-bold text-lg">Decentralized Power</h3>
@@ -84,7 +84,7 @@ export default function GitFundamentalsPage() {
 
             {/* 02. Motivation */}
             <motion.section variants={itemVariants} className="mb-24 relative">
-              <div className="absolute -left-12 top-0 bottom-0 w-1 bg-gradient-to-b from-primary/0 via-primary/40 to-primary/0 hidden lg:block"></div>
+              <div className="absolute -left-12 top-0 bottom-0 w-1 bg-linear-to-b from-primary/0 via-primary/40 to-primary/0 hidden lg:block"></div>
               <h2 className="text-3xl font-headline font-bold mb-10 flex items-center gap-4">
                 <span className="text-primary-dim opacity-50">02.</span> Motivation Behind Git
               </h2>
@@ -214,7 +214,7 @@ export default function GitFundamentalsPage() {
             {/* CTA */}
             <motion.div 
               variants={itemVariants} 
-              className="mt-20 flex flex-col sm:flex-row items-center justify-between p-8 bg-gradient-to-br from-surface-container to-surface-container-high rounded-2xl border border-primary/20 gap-8"
+              className="mt-20 flex flex-col sm:flex-row items-center justify-between p-8 bg-linear-to-br from-surface-container to-surface-container-high rounded-2xl border border-primary/20 gap-8"
             >
               <div className="flex items-center gap-6">
                 <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center text-primary-dim">
