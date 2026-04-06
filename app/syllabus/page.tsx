@@ -24,6 +24,7 @@ const syllabusData = [
   {
     index: "03",
     title: "Branching & Collaboration",
+    link : "branching-strategies",
     description: "Parallel development. Scaling your work without breaking the foundation.",
     tags: ["Parallelism", "Merging"],
     commands: ["git checkout -b dev", "git merge main", "git branch -D old"],
@@ -33,6 +34,7 @@ const syllabusData = [
   {
     index: "04",
     title: "Remote Repositories",
+    link : "remote-workflow",
     description: "Connecting to the cloud. Working like a real-world developer with teams across the globe.",
     tags: ["GitHub", "Open Source"],
     commands: ["git remote add origin", "git push -u origin", "git pull upstream"],
