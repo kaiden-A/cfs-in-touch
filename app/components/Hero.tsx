@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 export default function Hero() {
@@ -40,14 +41,19 @@ export default function Hero() {
                         </p>
 
                         <div className="flex flex-wrap gap-4">
-                            <motion.button 
-                                onClick={() => location.href="https://docs.google.com/forms/d/e/1FAIpQLSc8lZgwMt7g4oQxVyo0JvvmuLLr3MUnTQSIOPwCPj93SpEuww/viewform?usp=dialog"}
-                                whileHover={{ scale: 1.05 }}
-                                whileTap={{ scale: 0.95 }}
-                                className="rounded-xl bg-primary px-8 py-4 text-lg font-bold text-black shadow-[0_0_20px_rgba(0,210,255,0.3)]"
+                            <Link
+                                href={"https://docs.google.com/forms/d/e/1FAIpQLSc8lZgwMt7g4oQxVyo0JvvmuLLr3MUnTQSIOPwCPj93SpEuww/viewform?usp=dialog"}
+                                passHref
                             >
-                                Register Now
-                            </motion.button>
+                                <motion.button 
+                                    
+                                    whileHover={{ scale: 1.05 }}
+                                    whileTap={{ scale: 0.95 }}
+                                    className="rounded-xl bg-primary px-8 py-4 text-lg font-bold text-black shadow-[0_0_20px_rgba(0,210,255,0.3)]"
+                                >
+                                    Register Now
+                                </motion.button>
+                            </Link>
                         </div>
                     </motion.div>
 
