@@ -113,8 +113,8 @@ export default function Header() {
                         exit={{ opacity: 0, y: -20, scale: 0.95 }}
                         className="md:hidden absolute left-4 right-4 top-24 bg-slate-900/95 backdrop-blur-xl border border-primary/30 rounded-2xl p-6 flex flex-col gap-4 shadow-2xl pointer-events-auto"
                     >
-                        <a className="text-lg font-medium text-slate-200" href="/">Syllabus</a>
-                        <a className="text-lg font-medium text-slate-200" href="/syllabus">Activity</a>
+                        <a className="text-lg font-medium text-slate-200" href="/syllabus">Syllabus</a>
+                        <a className="text-lg font-medium text-slate-200" href="/activity">Activity</a>
                         <a className="text-lg font-medium text-slate-200" href="#">Team</a>
                         <button className="w-full rounded-xl bg-primary py-3 text-base font-bold text-black">
                             Enter Playground
